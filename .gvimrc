@@ -22,6 +22,7 @@ match EndSpace /\s\+$/
 " ----------------------------------------------------------------
 " Tab
 set guioptions-=T
+nnoremap <C-W><C-T> :tabnew<LF>
 nnoremap <C-Tab> gt
 nnoremap <C-S-Tab> gT
 
