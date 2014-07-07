@@ -10,6 +10,7 @@ set fileencoding=utf-8
 set fileformat=unix
 
 nnoremap <C-C><C-D> :cd %:h<CR>
+nnoremap <C-C><C-S-D> :lcd %:h<CR>
 nnoremap <C-Z> za
 imap <C-@> <C-[>
 
