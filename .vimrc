@@ -14,12 +14,6 @@ nnoremap <C-C><C-S-D> :lcd %:h<CR>
 nnoremap <C-Z> za
 imap <C-@> <C-[>
 
-inoremap <C-F><C-F> function(
-inoremap <C-F><C-G> ) {<CR>}
-inoremap <C-F><C-B> .bind(this)
-inoremap <C-F><C-I> if () {<CR>}<CR>else {<CR>}<Esc>3-wa
-inoremap <C-F><C-E> try {<CR>}<CR>catch (error) {<CR>}<Esc>2-O
-inoremap <C-F><C-T> setTimeout(function() {<CR>}.bind(this), 1);<Esc>O<C-I>
 inoremap <C-F><C-D> <C-R>=strftime('%Y-%m-%d')<CR>
 
 " ----------------------------------------------------------------
@@ -114,6 +108,12 @@ nmap <C-J> ,w
 augroup vimrc
 	autocmd!
 	autocmd FileType javascript inoremap <C-F><C-L> console.log();<Esc>hi
+	autocmd FileType javascript inoremap <C-F><C-F> function(
+	autocmd FileType javascript inoremap <C-F><C-G> ) {<CR>}
+	autocmd FileType javascript inoremap <C-F><C-B> .bind(this)
+	autocmd FileType javascript inoremap <C-F><C-I> if () {<CR>}<CR>else {<CR>}<Esc>3-wa
+	autocmd FileType javascript inoremap <C-F><C-E> try {<CR>}<CR>catch (error) {<CR>}<Esc>2-O
+	autocmd FileType javascript inoremap <C-F><C-T> setTimeout(function() {<CR>}.bind(this), 1);<Esc>O<C-I>
 	autocmd FileType coffee inoremap <C-F><C-L> console.log <Esc>a
 	autocmd FileType coffee inoremap <C-F><C-F> () -><Esc>3hi
 	autocmd BufRead * setlocal ts=2 sw=2 noet
@@ -130,4 +130,3 @@ NeoBundle 'vim-scripts/TwitVim'
 NeoBundle 'tpope/vim-fugitive'
 " NeoBundle 'yuratomo/w3m.vim'
 NeoBundle 'editorconfig/editorconfig-vim'
-
