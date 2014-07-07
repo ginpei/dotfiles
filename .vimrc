@@ -107,6 +107,7 @@ nmap <C-J> ,w
 " 各言語
 augroup vimrc
 	autocmd!
+	autocmd BufRead * setlocal ts=2 sw=2 noet
 	autocmd FileType javascript inoremap <C-F><C-L> console.log();<Esc>hi
 	autocmd FileType javascript inoremap <C-F><C-F> function(
 	autocmd FileType javascript inoremap <C-F><C-G> ) {<CR>}
@@ -116,7 +117,6 @@ augroup vimrc
 	autocmd FileType javascript inoremap <C-F><C-T> setTimeout(function() {<CR>}.bind(this), 1);<Esc>O<C-I>
 	autocmd FileType coffee inoremap <C-F><C-L> console.log <Esc>a
 	autocmd FileType coffee inoremap <C-F><C-F> () -><Esc>3hi
-	autocmd BufRead * setlocal ts=2 sw=2 noet
 	autocmd FileType ruby setlocal et
 	autocmd FileType ruby nmap <C-W><C-F> :Unite file file/new<LF>A
 	autocmd FileType eruby setlocal et
