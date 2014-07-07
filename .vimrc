@@ -16,6 +16,7 @@ imap <C-@> <C-[>
 
 inoremap <C-F><C-F> function(
 inoremap <C-F><C-G> ) {<CR>}
+inoremap <C-F><C-B> .bind(this)
 inoremap <C-F><C-I> if () {<CR>}<CR>else {<CR>}<Esc>3-wa
 inoremap <C-F><C-E> try {<CR>}<CR>catch (error) {<CR>}<Esc>2-O
 inoremap <C-F><C-T> setTimeout(function() {<CR>}.bind(this), 1);<Esc>O<C-I>
