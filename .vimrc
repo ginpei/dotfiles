@@ -9,6 +9,8 @@ set encoding=utf-8
 set fileencoding=utf-8
 set fileformat=unix
 
+nnoremap <S-Right> >iB
+nnoremap <S-Left> <iB
 nnoremap <C-C><C-D> :cd %:h<CR>
 nnoremap <C-L><C-C><C-D> :lcd %:h<CR>
 nnoremap <C-Z> za
@@ -130,3 +132,4 @@ NeoBundle 'vim-scripts/TwitVim'
 NeoBundle 'tpope/vim-fugitive'
 " NeoBundle 'yuratomo/w3m.vim'
 NeoBundle 'editorconfig/editorconfig-vim'
+
