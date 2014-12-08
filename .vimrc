@@ -19,6 +19,8 @@ imap <C-@> <C-[>
 inoremap <C-F><C-D> <C-R>=strftime('%Y-%m-%d')<CR>
 inoremap <C-F><S-F> for (var i=0, l=.length; i<l; i++) {<CR>}<Esc>-15la
 
+nnoremap <C-W><C-R> :browse old<CR>
+
 " ----------------------------------------------------------------
 " NeoBundle
 " http://qiita.com/items/1c32d3f24cc2919203eb
