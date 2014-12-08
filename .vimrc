@@ -17,6 +17,7 @@ nnoremap <C-Z> za
 imap <C-@> <C-[>
 
 inoremap <C-F><C-D> <C-R>=strftime('%Y-%m-%d')<CR>
+inoremap <C-F><S-F> for (var i=0, l=.length; i<l; i++) {<CR>}<Esc>-15la
 
 " ----------------------------------------------------------------
 " NeoBundle
