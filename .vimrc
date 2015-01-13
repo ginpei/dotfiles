@@ -93,9 +93,13 @@ autocmd FileType coffee setlocal sw=2 sts=2 ts=2 et
 
 " ----------------------------------------------------------------
 " Markdown
-:command! Marked :!open -a Marked "%"
 au BufRead,BufNewFile,BufReadPre *.md set filetype=markdown
 autocmd FileType markdown setlocal sw=4 sts=4 ts=4 et
+if has('win32')
+	:command! Marked :!"C:/Program Files (x86)/Google/Chrome/Application/chrome.exe" --profile-directory=Default "%"
+else
+	:command! Marked :!open -a Marked "%"
+endif
 
 " ----------------------------------------------------------------
 " EasyMotion
