@@ -31,10 +31,14 @@ filetype off
 if has('vim_starting')
 	if has('win32')
 		set runtimepath+=~/vimfiles/bundle/neobundle.vim
-		call neobundle#rc(expand('~/vimfiles/bundle/'))
+		call neobundle#begin(expand('~/vimfiles/bundle/'))
+		NeoBundleFetch 'Shougo/neobundle.vim'
+		call neobundle#end()
 	else
 		set runtimepath+=~/.vim/bundle/neobundle.vim
-		call neobundle#rc(expand('~/.vim/bundle/'))
+		call neobundle#begin(expand('~/.vim/bundle/'))
+		NeoBundleFetch 'Shougo/neobundle.vim'
+		call neobundle#end()
 	endif
 endif
 
