@@ -66,9 +66,9 @@ nmap <C-W><S-P> :Unite file -auto-preview<LF>A
 nmap <C-W><C-B> :Unite buffer<LF>A
 nmap <C-W><S-B> :Unite bookmark<LF>A
 
-NeoBundle 'h1mesuke/unite-outline'
-nmap <C-W><C-O> :Unite outline<LF>A
-"nmap <C-W><C-O> :Unite -vertical -winwidth=20 outline<LF>kA
+NeoBundle 'Shougo/unite-outline'
+nmap <C-W><C-O> :Unite outline<LF>
+nmap <C-W><S-O> :Unite -vertical -winwidth=20 outline<LF>
 
 " ----------------------------------------------------------------
 " open-browser.vim
@@ -96,7 +96,7 @@ autocmd FileType coffee setlocal sw=2 sts=2 ts=2 et
 au BufRead,BufNewFile,BufReadPre *.md set filetype=markdown
 autocmd FileType markdown setlocal sw=4 sts=4 ts=4 et
 if has('win32')
-	:command! Marked :!"C:/Program Files (x86)/Google/Chrome/Application/chrome.exe" --profile-directory=Default "%"
+	:command! Marked :silent !"C:/Program Files (x86)/Google/Chrome/Application/chrome.exe" --profile-directory=Default "%"
 else
 	:command! Marked :!open -a Marked "%"
 endif
@@ -130,12 +130,24 @@ augroup vimrc
 	autocmd FileType ruby nmap <C-W><C-F> :Unite file file/new<LF>A
 	autocmd FileType eruby setlocal et
 	autocmd FileType eruby nmap <C-W><C-F> :Unite file file/new<LF>A
+	autocmd BufNewFile,BufRead *.hbs set filetype=html
 augroup END
+
+" ----------------------------------------------------------------
+" neo-complete
+NeoBundle "Shougo/neocomplete.vim"
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 
 " ----------------------------------------------------------------
 " 諸々
 NeoBundle 'taichouchou2/html5.vim'
-NeoBundle 'vim-scripts/TwitVim'
+" NeoBundle 'vim-scripts/TwitVim'
 NeoBundle 'tpope/vim-fugitive'
 " NeoBundle 'yuratomo/w3m.vim'
 NeoBundle 'editorconfig/editorconfig-vim'

@@ -14,10 +14,12 @@ highlight Visual guibg=#666633
 highlight Search guifg=#666600 guibg=#CCCC99
 highlight Comment guifg=#66CC99
 
-" highlight ZenkakuSpace guibg=darkgray
-" match ZenkakuSpace /　/
-highlight EndSpace guibg=darkgray
-match EndSpace /\s\+$/
+highlight ZenkakuSpace guibg=darkgray
+match ZenkakuSpace /　/
+highlight TailSpace guibg=darkgray
+match TailSpace /\s\+$/
+highlight Geta guifg=#666666 guibg=yellow
+match Geta /〓[^〓]*〓/
 
 " ----------------------------------------------------------------
 " Tab
