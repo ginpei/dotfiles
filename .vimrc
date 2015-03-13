@@ -14,6 +14,7 @@ nnoremap <S-Left> <iB
 nnoremap <C-C><C-D> :cd %:h<CR>
 nnoremap <C-L><C-C><C-D> :lcd %:h<CR>
 nnoremap <C-Z> za
+nnoremap <S-Z> vaBzf
 imap <C-@> <C-[>
 
 inoremap <C-F><C-D> <C-R>=strftime('%Y-%m-%d')<CR>
