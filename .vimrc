@@ -160,4 +160,5 @@ NeoBundle 'taichouchou2/html5.vim'
 NeoBundle 'tpope/vim-fugitive'
 " NeoBundle 'yuratomo/w3m.vim'
 NeoBundle 'editorconfig/editorconfig-vim'
-
+NeoBundle 'othree/javascript-libraries-syntax.vim'
+NeoBundle 'bendavis78/vim-polymer'
