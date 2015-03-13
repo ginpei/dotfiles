@@ -24,6 +24,8 @@ nnoremap <C-W><C-R> :browse old<CR>
 
 vnoremap <C-C> "+y
 
+:command! W :
+
 " ----------------------------------------------------------------
 " NeoBundle
 " http://qiita.com/items/1c32d3f24cc2919203eb
