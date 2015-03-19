@@ -9,6 +9,7 @@ set encoding=utf-8
 set fileencoding=utf-8
 set fileformat=unix
 
+nnoremap <Space><Space> <Esc>
 nnoremap <S-Right> >iB
 nnoremap <S-Left> <iB
 nnoremap <C-C><C-D> :cd %:h<CR>
@@ -152,6 +153,14 @@ inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+
+" ----------------------------------------------------------------
+" encomment
+NeoBundle 'tyru/caw.vim'
+nmap <Space>k <Plug>(caw:i:toggle)
+vmap <Space>k <Plug>(caw:i:toggle)
+" nmap <Space><S-k> <Plug>(caw:wrap:toggle)
+" vmap <Space><S-k> <Plug>(caw:wrap:toggle)
 
 " ----------------------------------------------------------------
 " 諸々
