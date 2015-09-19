@@ -198,16 +198,6 @@ vmap <Space>k <Plug>(caw:i:toggle)
 " nmap <Space><S-k> <Plug>(caw:wrap:toggle)
 " vmap <Space><S-k> <Plug>(caw:wrap:toggle)
 
-
-"" " ----------------------------------------------------------------
-"" " pathgon
-"" call neobundle#begin(expand('~/vimfiles/bundle/'))
-"" NeoBundle 'tpope/vim-pathogen'
-"" call neobundle#end()
-"" call pathogen#infect()
-"" syntax enable
-"" filetype plugin indent on
-
 " ----------------------------------------------------------------
 " Multiple Cursors
 " https://github.com/terryma/vim-multiple-cursors
