@@ -1,13 +1,32 @@
-set ai
-set nu
+if has('win32')
+let vimfiles_path = '~/vimfiles'
+else
+let vimfiles_path = '~/.vim'
+end
+
+" ----------------------------------------------------------------
+" Basic Settings
+
+" Behaviour
 set nobackup
 set noswapfile
 set noundofile
-" set clipboard=unnamed
 
+" Display
+set autoindent
+set number
+set shiftwidth=2
+set showtabline=2
+set softtabstop=2
+set tabstop=2
+
+" Encode
 set encoding=utf-8
 set fileencoding=utf-8
 set fileformat=unix
+
+" ----------------------------------------------------------------
+" Keyboard Shortcuts
 
 nnoremap <Space><Space> <Esc>
 nnoremap <S-Right> >iB
@@ -28,102 +47,7 @@ vnoremap <C-C> "+y
 :command! W :
 
 " ----------------------------------------------------------------
-" NeoBundle
-" http://qiita.com/items/1c32d3f24cc2919203eb
-
-set nocompatible
-filetype off
-
-if has('vim_starting')
-	if has('win32')
-		set runtimepath+=~/vimfiles/bundle/neobundle.vim
-		call neobundle#begin(expand('~/vimfiles/bundle/'))
-		NeoBundleFetch 'Shougo/neobundle.vim'
-		call neobundle#end()
-	else
-		set runtimepath+=~/.vim/bundle/neobundle.vim
-		call neobundle#begin(expand('~/.vim/bundle/'))
-		NeoBundleFetch 'Shougo/neobundle.vim'
-		call neobundle#end()
-	endif
-endif
-
-filetype plugin indent on     " required!
-filetype indent on
-syntax on
-
-NeoBundle 'Shougo/neobundle.vim'
-NeoBundle 'Shougo/vimproc'
-
-" ----------------------------------------------------------------
-" ZenCoding/emmet
-NeoBundle 'mattn/emmet-vim'
-let g:user_emmet_settings = {
-\ 'lang' : 'ja',
-\ 'html' : {
-\   'indentation' : '	'
-\ },
-\}
-
-" ----------------------------------------------------------------
-" Unite.vim
-" https://github.com/Shougo/unite.vim
-NeoBundle 'Shougo/unite.vim'
-nmap <C-W><C-W> :Unite file file/new<LF>A
-nmap <C-W><C-F> :Unite file file/new<LF>A
-nmap <C-W><S-F> :Unite file file/new<LF>A
-nmap <C-W><S-P> :Unite file -auto-preview<LF>A
-nmap <C-W><C-B> :Unite buffer<LF>A
-nmap <C-W><S-B> :Unite bookmark<LF>A
-
-NeoBundle 'Shougo/unite-outline'
-nmap <C-W><C-O> :Unite outline<LF>
-nmap <C-W><S-O> :Unite -vertical -winwidth=20 outline<LF>
-
-" ----------------------------------------------------------------
-" open-browser.vim
-NeoBundle 'tyru/open-browser.vim'
-nmap <Leader>o <Plug>(openbrowser-open)
-
-" ----------------------------------------------------------------
-" http://qiita.com/items/ab70f914a6a577e25d70
-NeoBundle 'itchyny/lightline.vim'
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ 'active': {
-      \   'right': [ [ 'lineinfo' ], [ 'fileformat', 'fileencoding', 'filetype' ] ]
-      \ }
-      \ }
-
-" ----------------------------------------------------------------
-" http://qiita.com/alpaca_taichou/items/fb442cfa78f91634cfaa
-NeoBundle 'kchmck/vim-coffee-script'
-au BufRead,BufNewFile,BufReadPre *.coffee set filetype=coffee
-autocmd FileType coffee setlocal sw=2 sts=2 ts=2 et
-
-" ----------------------------------------------------------------
-" Markdown
-au BufRead,BufNewFile,BufReadPre *.md set filetype=markdown
-autocmd FileType markdown setlocal sw=4 sts=4 ts=4 et
-if has('win32')
-	:command! Marked :silent !"C:/Program Files (x86)/Google/Chrome/Application/chrome.exe" --profile-directory=Default "%"
-else
-	:command! Marked :!open -a Marked "%"
-endif
-
-" ----------------------------------------------------------------
-" EasyMotion
-" http://mba-hack.blogspot.jp/2013/01/vim4.html
-NeoBundle 'Lokaltog/vim-easymotion'
-let g:Eaotion_keys='hjklasdfgyuiopqwertnmzxcvbHJKLASDFGYUIOPQWERTNMZXCVB'
-let g:EasyMotion_leader_key=","
-let g:EasyMotion_grouping=1
-nmap <C-K> ,b
-nmap <S-K> H,j
-nmap <C-J> ,w
-
-" ----------------------------------------------------------------
-" 各言語
+" File Types
 augroup vimrc
 	autocmd!
 	autocmd BufRead * setlocal ts=2 sw=2 noet
@@ -144,8 +68,120 @@ augroup vimrc
 augroup END
 
 " ----------------------------------------------------------------
+" NeoBundle
+
+" Note: Skip initialization for vim-tiny or vim-small.
+if 0 | endif
+
+if has('vim_starting')
+  if &compatible
+    set nocompatible               " Be iMproved
+  endif
+
+  " Required:
+  exe 'set runtimepath+=' . vimfiles_path . '/bundle/neobundle.vim/'
+endif
+
+" Required:
+call neobundle#begin(expand(vimfiles_path . '/bundle/'))
+
+" Let NeoBundle manage NeoBundle
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" My Bundles here:
+" Refer to |:NeoBundle-examples|.
+" Note: You don't set neobundle setting in .gvimrc!
+NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'Shougo/unite-outline'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'editorconfig/editorconfig-vim'
+NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'mattn/emmet-vim'
+NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'othree/html5.vim'
+NeoBundle 'othree/javascript-libraries-syntax.vim'
+NeoBundle 'slim-template/vim-slim'
+NeoBundle 'terryma/vim-multiple-cursors'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'tyru/caw.vim'
+NeoBundle 'tyru/open-browser.vim'
+
+call neobundle#end()
+
+" Required:
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck
+
+" ----------------------------------------------------------------
+" Emmet
+" https://github.com/mattn/emmet-vim
+let g:user_emmet_settings = {
+	\ 'lang' : 'ja',
+	\ 'html' : {
+	\   'indentation' : '	'
+	\ },
+	\}
+
+" ----------------------------------------------------------------
+" https://github.com/Shougo/unite.vim
+nmap <C-W><C-W> :Unite file file/new<LF>
+nmap <C-W><C-F> :Unite file file/new<LF>
+nmap <C-W><C-B> :Unite buffer<LF>
+nmap <C-W><S-B> :Unite bookmark<LF>
+
+" Shougo/unite-outline
+nmap <C-W><C-O> :Unite outline<LF>
+nmap <C-W><S-O> :Unite -vertical -winwidth=20 outline<LF>
+
+" ----------------------------------------------------------------
+" https://github.com/tyru/open-browser.vim
+nmap <Leader>o <Plug>(openbrowser-open)
+
+" ----------------------------------------------------------------
+" itchyny/lightline.vim
+" http://qiita.com/items/ab70f914a6a577e25d70
+let g:lightline = {
+	\ 'colorscheme': 'wombat',
+	\ 'active': {
+	\   'right': [ [ 'lineinfo' ], [ 'fileformat', 'fileencoding', 'filetype' ] ]
+	\ }
+	\ }
+
+" ----------------------------------------------------------------
+" https://github.com/kchmck/vim-coffee-script
+" http://qiita.com/alpaca_taichou/items/fb442cfa78f91634cfaa
+au BufRead,BufNewFile,BufReadPre *.coffee set filetype=coffee
+autocmd FileType coffee setlocal sw=2 sts=2 ts=2 et
+
+" ----------------------------------------------------------------
+" Markdown
+au BufRead,BufNewFile,BufReadPre *.md set filetype=markdown
+autocmd FileType markdown setlocal sw=4 sts=4 ts=4 et
+if has('win32')
+	:command! Marked :silent !"C:/Program Files (x86)/Google/Chrome/Application/chrome.exe" --profile-directory=Default "%"
+else
+	:command! Marked :!open -a Marked "%"
+endif
+
+" ----------------------------------------------------------------
+" EasyMotion
+" https://github.com/Lokaltog/vim-easymotion
+" http://mba-hack.blogspot.jp/2013/01/vim4.html
+let g:Eaotion_keys='hjklasdfgyuiopqwertnmzxcvbHJKLASDFGYUIOPQWERTNMZXCVB'
+let g:EasyMotion_leader_key=","
+let g:EasyMotion_grouping=1
+nmap <C-K> ,b
+nmap <C-J> ,w
+
+" ----------------------------------------------------------------
 " neo-complete
-NeoBundle "Shougo/neocomplete.vim"
+" https://github.com/Shougo/neocomplete.vim
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
 
@@ -156,18 +192,28 @@ autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 
 " ----------------------------------------------------------------
 " encomment
-NeoBundle 'tyru/caw.vim'
+" https://github.com/tyru/caw.vim
 nmap <Space>k <Plug>(caw:i:toggle)
 vmap <Space>k <Plug>(caw:i:toggle)
 " nmap <Space><S-k> <Plug>(caw:wrap:toggle)
 " vmap <Space><S-k> <Plug>(caw:wrap:toggle)
 
+
+"" " ----------------------------------------------------------------
+"" " pathgon
+"" call neobundle#begin(expand('~/vimfiles/bundle/'))
+"" NeoBundle 'tpope/vim-pathogen'
+"" call neobundle#end()
+"" call pathogen#infect()
+"" syntax enable
+"" filetype plugin indent on
+
 " ----------------------------------------------------------------
-" 諸々
-NeoBundle 'taichouchou2/html5.vim'
-" NeoBundle 'vim-scripts/TwitVim'
-NeoBundle 'tpope/vim-fugitive'
-" NeoBundle 'yuratomo/w3m.vim'
-NeoBundle 'editorconfig/editorconfig-vim'
-NeoBundle 'othree/javascript-libraries-syntax.vim'
-NeoBundle 'bendavis78/vim-polymer'
+" Multiple Cursors
+" https://github.com/terryma/vim-multiple-cursors
+nnoremap <Space>/ :MultipleCursorsFind 
+nnoremap <Space>* :MultipleCursorsFind <C-r><C-w><CR>
+vnoremap <Space>/ :MultipleCursorsFind 
+vnoremap <Space>s :<C-h><C-h><C-h><C-h><C-h>MultipleCursorsFind <C-r><C-w><CR>s
+" vnoremap <Space>* viw"xy :MultipleCursorsFind <C-r>x<CR>
+vnoremap <Space>v "xy :MultipleCursorsFind <C-r>x<CR>

@@ -19,7 +19,6 @@ match ZenkakuSpace /　/
 highlight TailSpace guibg=darkgray
 match TailSpace /\s\+$/
 highlight Geta guifg=#666666 guibg=yellow
-match Geta /〓[^〓]*〓/
 
 " ----------------------------------------------------------------
 " Tab
@@ -37,6 +36,5 @@ endif
 " ----------------------------------------------------------------
 " Indent Guids
 " https://github.com/nathanaelkane/vim-indent-guides
-NeoBundle 'nathanaelkane/vim-indent-guides'
 let g:indent_guides_enable_on_vim_startup = 1
 
