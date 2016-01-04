@@ -136,7 +136,7 @@ let g:user_emmet_settings = {
 nmap <C-W><C-W> :Unite file file/new<LF>
 nmap <C-W><C-F> :Unite file file/new<LF>
 nmap <C-W><C-B> :Unite buffer<LF>
-nmap <C-W><S-B> :Unite bookmark<LF>
+nmap <C-W><C-M> :Unite bookmark<LF>
 
 " Shougo/unite-outline
 nmap <C-W><C-O> :Unite outline<LF>
