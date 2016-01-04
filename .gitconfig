@@ -1,27 +1,26 @@
 [color]
-        ui = true
+	ui = true
 [core]
-        editor = vi
-        attributesfile = ~/.gitattributes
+	editor = vi
+	attributesfile = ~/.gitattributes
 [user]
-        name = ginpei
-        email = ginpei@gmail.com
+	name = ginpei
+	email = ginpei@gmail.com
 [alias]
-        s = status -sb
-        c = checkout
-        b = branch
-        d = diff --color-words
-        diffc = diff --cached
-        dc = diff --cached --color-words
-        diffl = log -1 -p
-        dl = log -1 -p  --color-words
-        path = log --graph --date=short --pretty=format:\"%C(yellow)%h %C(white)%s %C(green)%d %C(red)%cn %C(blue)%cd - %cr\"
-        graph = log --graph --date=short --pretty=format:\"%C(yellow)%h %C(white)%s %C(green)%d %C(red)%cn %C(blue)%cd - %cr\" --all
-        daily = log --since=yesterday --author=ginpei --pretty=format:'* %s'  --all
-        zip = archive --format=zip HEAD
+	s = status -sb
+	c = checkout
+	b = branch
+	d = diff --color-words
+	diffc = diff --cached
+	dc = diff --cached --color-words
+	diffl = log -1 -p
+	dl = log -1 -p  --color-words
+	path = log --graph --date=short --pretty=format:\"%C(yellow)%h %C(white)%s %C(green)%d %C(red)%cn %C(blue)%cd - %cr\"
+	graph = log --graph --date=short --pretty=format:\"%C(yellow)%h %C(white)%s %C(green)%d %C(red)%cn %C(blue)%cd - %cr\" --all
+	daily = log --since=yesterday --author=ginpei --pretty=format:'* %s'  --all
+	zip = archive --format=zip HEAD
 [color]
-        branch = always
-        diff = always
-        interactive = always
-        status = always
-
+	branch = always
+	diff = always
+	interactive = always
+	status = always
