@@ -110,6 +110,7 @@ NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tyru/caw.vim'
 NeoBundle 'tyru/open-browser.vim'
+NeoBundle 'digitaltoad/vim-jade'
 
 call neobundle#end()
 
