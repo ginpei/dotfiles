@@ -20,10 +20,12 @@ set showtabline=2
 set softtabstop=2
 set tabstop=2
 
-" Encode
+" Encode and Languages
 set encoding=utf-8
 set fileencoding=utf-8
 set fileformat=unix
+set spelllang=en,cjk
+set spell
 
 " ----------------------------------------------------------------
 " Keyboard Shortcuts
