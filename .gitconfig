@@ -24,3 +24,5 @@
 	diff = always
 	interactive = always
 	status = always
+[push]
+	default = simple
