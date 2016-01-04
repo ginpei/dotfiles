@@ -2,6 +2,7 @@
         ui = true
 [core]
         editor = vi
+        attributesfile = ~/.gitattributes
 [user]
         name = ginpei
         email = ginpei@gmail.com

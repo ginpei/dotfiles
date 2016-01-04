@@ -1,0 +1,5 @@
+*.html diff=html
+*.php diff=php
+*.py diff=python
+*.rb diff=ruby
+*.js diff=java
