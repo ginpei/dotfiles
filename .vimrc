@@ -114,6 +114,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tyru/caw.vim'
 NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'digitaltoad/vim-jade'
+NeoBundle 'tpope/vim-rails'
 
 call neobundle#end()
 
