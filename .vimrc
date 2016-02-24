@@ -138,11 +138,12 @@ let g:user_emmet_settings = {
 
 " ----------------------------------------------------------------
 " https://github.com/Shougo/unite.vim
+nmap <C-W><S-W> :Unite file_rec directory_rec file/new<LF>
 nmap <C-W><C-W> :Unite file file/new<LF>
-nmap <C-W><C-F> :Unite file file/new<LF>
 nmap <C-W><C-B> :Unite buffer<LF>
 nmap <C-W><C-M> :Unite bookmark<LF>
 nmap <C-W><C-H> :Unite file_mru<LF>
+nmap <C-W><C-G> :Unite register<LF>
 
 " Shougo/unite-outline
 nmap <C-W><C-O> :Unite outline<LF>
