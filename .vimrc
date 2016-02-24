@@ -101,6 +101,7 @@ NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/unite-outline'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'kchmck/vim-coffee-script'
@@ -141,6 +142,7 @@ nmap <C-W><C-W> :Unite file file/new<LF>
 nmap <C-W><C-F> :Unite file file/new<LF>
 nmap <C-W><C-B> :Unite buffer<LF>
 nmap <C-W><C-M> :Unite bookmark<LF>
+nmap <C-W><C-H> :Unite file_mru<LF>
 
 " Shougo/unite-outline
 nmap <C-W><C-O> :Unite outline<LF>
