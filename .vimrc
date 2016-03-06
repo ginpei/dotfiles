@@ -187,8 +187,9 @@ endif
 let g:Eaotion_keys='hjklasdfgyuiopqwertnmzxcvbHJKLASDFGYUIOPQWERTNMZXCVB'
 let g:EasyMotion_leader_key=","
 let g:EasyMotion_grouping=1
-nmap <C-K> ,b
-nmap <C-J> ,w
+nmap <C-k><C-k> ,b
+nmap <C-k><C-j> ,w
+nmap <C-j> <Plug>(easymotion-s2)
 
 " ----------------------------------------------------------------
 " neo-complete
