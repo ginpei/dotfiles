@@ -219,7 +219,6 @@ vnoremap <Space>s :<C-h><C-h><C-h><C-h><C-h>MultipleCursorsFind <C-r><C-w><CR>s
 " vnoremap <Space>* viw"xy :MultipleCursorsFind <C-r>x<CR>
 vnoremap <Space>v "xy :MultipleCursorsFind <C-r>x<CR>
 
-
 " ----------------------------------------------------------------
 " Indent Guides
 " https://github.com/nathanaelkane/vim-indent-guides
