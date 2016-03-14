@@ -61,8 +61,8 @@ augroup vimrc
 	autocmd FileType javascript inoremap <C-F><C-G> ) {<CR>}
 	autocmd FileType javascript inoremap <C-F><C-B> .bind(this)
 	autocmd FileType javascript inoremap <C-F><C-I> if () {<CR>}<CR>else {<CR>}<Esc>3-wa
-	autocmd FileType javascript inoremap <C-F><C-E> try {<CR>}<CR>catch (error) {<CR>}<Esc>2-O
-	autocmd FileType javascript inoremap <C-F><C-T> setTimeout(function() {<CR>}.bind(this), 1);<Esc>O<C-I>
+	autocmd FileType javascript inoremap <C-F><C-E> try {<CR>}<CR>catch (e) {<CR>}<Esc>kkk
+	autocmd BufRead,BufNewFile *.js inoremap <C-F><C-T> setTimeout(function() {<CR>}.bind(this), 1);<Esc>O
 	autocmd FileType coffee inoremap <C-F><C-L> console.log <Esc>a
 	autocmd FileType coffee inoremap <C-F><C-F> () -><Esc>3hi
 	autocmd FileType ruby setlocal et
