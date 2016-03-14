@@ -40,7 +40,7 @@ nnoremap <S-Z> vaBzf
 nnoremap <Space>d :diffthis<CR>
 nnoremap <Space><S-D> :diffoff!<CR>
 nnoremap <Space><C-D> :diffupdate<CR>
-imap <C-@> <C-[>
+inoremap <C-@> <C-[>
 
 inoremap <C-F><C-D> <C-R>=strftime('%Y-%m-%d')<CR>
 inoremap <C-F><S-F> for (var i=0, l=.length; i<l; i++) {<CR>}<Esc>-15la
@@ -66,9 +66,9 @@ augroup vimrc
 	autocmd FileType coffee inoremap <C-F><C-L> console.log <Esc>a
 	autocmd FileType coffee inoremap <C-F><C-F> () -><Esc>3hi
 	autocmd FileType ruby setlocal et
-	autocmd FileType ruby nmap <C-W><C-F> :Unite file file/new<LF>A
+	autocmd FileType ruby nnoremap <C-W><C-F> :Unite file file/new<LF>A
 	autocmd FileType eruby setlocal et
-	autocmd FileType eruby nmap <C-W><C-F> :Unite file file/new<LF>A
+	autocmd FileType eruby nnoremap <C-W><C-F> :Unite file file/new<LF>A
 	autocmd BufNewFile,BufRead *.hbs set filetype=html
 augroup END
 
@@ -139,20 +139,20 @@ let g:user_emmet_settings = {
 
 " ----------------------------------------------------------------
 " https://github.com/Shougo/unite.vim
-nmap <C-W><S-W> :Unite file_rec directory_rec file/new<LF>
-nmap <C-W><C-W> :Unite file file/new<LF>
-nmap <C-W><C-B> :Unite buffer<LF>
-nmap <C-W><C-M> :Unite bookmark<LF>
-nmap <C-W><C-H> :Unite file_mru<LF>
-nmap <C-W><C-G> :Unite register<LF>
+nnoremap <C-W><S-W> :Unite file_rec directory_rec file/new<LF>
+nnoremap <C-W><C-W> :Unite file file/new<LF>
+nnoremap <C-W><C-B> :Unite buffer<LF>
+nnoremap <C-W><C-M> :Unite bookmark<LF>
+nnoremap <C-W><C-H> :Unite file_mru<LF>
+nnoremap <C-W><C-G> :Unite register<LF>
 
 " Shougo/unite-outline
-nmap <C-W><C-O> :Unite outline<LF>
-nmap <C-W><S-O> :Unite -vertical -winwidth=20 outline<LF>
+nnoremap <C-W><C-O> :Unite outline<LF>
+nnoremap <C-W><S-O> :Unite -vertical -winwidth=20 outline<LF>
 
 " ----------------------------------------------------------------
 " https://github.com/tyru/open-browser.vim
-nmap <Leader>o <Plug>(openbrowser-open)
+nnoremap <Leader>o <Plug>(openbrowser-open)
 
 " ----------------------------------------------------------------
 " itchyny/lightline.vim
@@ -187,9 +187,9 @@ endif
 let g:Eaotion_keys='hjklasdfgyuiopqwertnmzxcvbHJKLASDFGYUIOPQWERTNMZXCVB'
 let g:EasyMotion_leader_key=","
 let g:EasyMotion_grouping=1
-nmap <C-k><C-k> ,b
-nmap <C-k><C-j> ,w
-nmap <C-j> <Plug>(easymotion-s2)
+nnoremap <C-k><C-k> ,b
+nnoremap <C-k><C-j> ,w
+nnoremap <C-j> <Plug>(easymotion-s2)
 
 " ----------------------------------------------------------------
 " neo-complete
@@ -205,10 +205,10 @@ autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 " ----------------------------------------------------------------
 " encomment
 " https://github.com/tyru/caw.vim
-nmap <Space>k <Plug>(caw:i:toggle)
-vmap <Space>k <Plug>(caw:i:toggle)
-" nmap <Space><S-k> <Plug>(caw:wrap:toggle)
-" vmap <Space><S-k> <Plug>(caw:wrap:toggle)
+nnoremap <Space>k <Plug>(caw:i:toggle)
+vnoremap <Space>k <Plug>(caw:i:toggle)
+" nnoremap <Space><S-k> <Plug>(caw:wrap:toggle)
+" vnoremap <Space><S-k> <Plug>(caw:wrap:toggle)
 
 " ----------------------------------------------------------------
 " Multiple Cursors
