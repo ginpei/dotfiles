@@ -8,7 +8,7 @@ set guifontwide=MS_Gothic:h12,ヒラギノ丸ゴ\ Pro:h12  " あいうえお
 " Coloring
 " https://github.com/tomasr/molokai
 let g:molokai_original=1
-colorscheme molokai
+colorscheme japanesque
 
 highlight Visual guibg=#666633
 highlight Search guifg=#666600 guibg=#CCCC99
