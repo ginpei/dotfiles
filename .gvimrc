@@ -29,6 +29,8 @@ nnoremap <C-S-Tab> gT
 
 " ----------------------------------------------------------------
 " Window
+set columns=80
+set lines=25
 if has("win32")
 	nnoremap <C-N> :!start gvim<CR>
 endif

@@ -49,7 +49,7 @@ nnoremap <C-W><C-R> :browse old<CR>
 
 vnoremap <C-C> "+y
 
-:command! W :
+:command! W :set columns=80 lines=25
 
 " ----------------------------------------------------------------
 " File Types
