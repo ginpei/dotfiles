@@ -27,6 +27,10 @@ set fileformat=unix
 set spelllang=en,cjk
 set spell
 
+" Files
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip  " Basic
+set wildignore+=*/node_modules/*  " Node
+
 " ----------------------------------------------------------------
 " Keyboard Shortcuts
 
