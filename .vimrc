@@ -47,6 +47,7 @@ nnoremap <Space><C-D> :diffupdate<CR>
 imap <C-@> <C-[>
 
 inoremap <C-F><C-D> <C-R>=strftime('%Y-%m-%d')<CR>
+inoremap <C-F><S-D> <C-R>=strftime('%H:%M')<CR>
 inoremap <C-F><S-F> for (var i=0, l=.length; i<l; i++) {<CR>}<Esc>-15la
 
 nnoremap <C-W><C-R> :browse old<CR>
