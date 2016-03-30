@@ -39,11 +39,6 @@ nnoremap <S-Right> >iB
 nnoremap <S-Left> <iB
 nnoremap <C-C><C-D> :cd %:h<CR>
 nnoremap <C-L><C-C><C-D> :lcd %:h<CR>
-nnoremap <C-Z> za
-nnoremap <S-Z> vaBzf
-nnoremap <Space>d :diffthis<CR>
-nnoremap <Space><S-D> :diffoff!<CR>
-nnoremap <Space><C-D> :diffupdate<CR>
 imap <C-@> <C-[>
 
 inoremap <C-F><C-D> <C-R>=strftime('%Y-%m-%d')<CR>
@@ -55,6 +50,15 @@ nnoremap <C-W><C-R> :browse old<CR>
 vnoremap <C-C> "+y
 
 :command! W :set columns=80 lines=25
+
+" Folding
+nnoremap <C-Z> za
+nnoremap <S-Z> vaBzf
+
+" Diff
+nnoremap <Space>d :diffthis<CR>
+nnoremap <Space><S-D> :diffoff!<CR>
+nnoremap <Space><C-D> :diffupdate<CR>
 
 " ----------------------------------------------------------------
 " File Types
