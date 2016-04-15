@@ -127,6 +127,7 @@ NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'leafgarland/typescript-vim'
 NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'itchyny/vim-cursorword'
 
 call neobundle#end()
 
