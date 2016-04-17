@@ -6,19 +6,20 @@ set guifontwide=MS_Gothic:h12,ヒラギノ丸ゴ\ Pro:h12  " あいうえお
 
 " ----------------------------------------------------------------
 " Coloring
-" https://github.com/tomasr/molokai
-let g:molokai_original=1
+
+" Scheme
+"" let g:molokai_original=1
+"" colorscheme molokai  " https://github.com/tomasr/molokai
 colorscheme japanesque
 
-highlight Visual guibg=#666633
-highlight Search guifg=#666600 guibg=#CCCC99
-highlight Comment guifg=#66CC99
+" remove some japanesque's colors which I don't like
+highlight htmlTag guifg=#86C166
+highlight htmlEndTag guifg=#86C166
 
-highlight ZenkakuSpace guibg=darkgray
-match ZenkakuSpace /　/
-highlight TailSpace guibg=darkgray
-match TailSpace /\s\+$/
-highlight Geta guifg=#666666 guibg=yellow
+" Customization
+"" highlight Visual guibg=#666633
+"" highlight Search guifg=#666600 guibg=#CCCC99
+"" highlight Comment guifg=#66CC99
 
 " ----------------------------------------------------------------
 " Tab
