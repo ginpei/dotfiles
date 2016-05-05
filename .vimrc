@@ -15,6 +15,8 @@ set noundofile
 " Display
 set autoindent
 set number
+
+" Editor
 set shiftwidth=2
 set showtabline=2
 set softtabstop=2
@@ -27,7 +29,7 @@ set fileformat=unix
 set spelllang=en,cjk
 set spell
 
-" Files
+" Ignore Files
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip  " Basic
 set wildignore+=*/node_modules/*  " Node
 
