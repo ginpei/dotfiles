@@ -28,6 +28,7 @@ set tabstop=2
 " Encode and Languages
 set encoding=utf-8
 set fileencoding=utf-8
+set fileformats=unix,dos,mac
 set fileformat=unix
 set spelllang=en,cjk
 set spell
