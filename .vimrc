@@ -21,6 +21,9 @@ set shiftwidth=2
 set showtabline=2
 set softtabstop=2
 set tabstop=2
+" set foldmethod=syntax
+" set foldlevelstart=1
+" let javaScript_fold=1
 
 " Encode and Languages
 set encoding=utf-8
