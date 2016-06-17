@@ -1,1 +1,8 @@
-{"private":"true"}
+{
+  "private": "true",
+  "scripts": {
+    "start": "echo Hello world!"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
