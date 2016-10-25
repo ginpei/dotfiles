@@ -11,6 +11,7 @@ end
 set nobackup
 set noswapfile
 set noundofile
+source $VIMRUNTIME/macros/matchit.vim
 
 " Display
 set autoindent
