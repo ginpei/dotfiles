@@ -1,7 +1,7 @@
 if has('win32')
-let vimfiles_path = '~/vimfiles'
+	let vimfiles_path = '~/vimfiles'
 else
-let vimfiles_path = '~/.vim'
+	let vimfiles_path = '~/.vim'
 end
 
 " ----------------------------------------------------------------
