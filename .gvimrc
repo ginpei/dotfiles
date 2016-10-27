@@ -15,11 +15,6 @@ colorscheme japanesque
 " remove some japanesque's colors which I don't like
 highlight Conceal guibg=NONE
 
-" Customization
-"" highlight Visual guibg=#666633
-"" highlight Search guifg=#666600 guibg=#CCCC99
-"" highlight Comment guifg=#66CC99
-
 " ----------------------------------------------------------------
 " Tab
 set guioptions-=T
