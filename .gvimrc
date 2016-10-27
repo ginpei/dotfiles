@@ -13,13 +13,7 @@ set guifontwide=MS_Gothic:h12,ヒラギノ丸ゴ\ Pro:h12  " あいうえお
 colorscheme japanesque
 
 " remove some japanesque's colors which I don't like
-highlight htmlTag guifg=#86C166
-highlight htmlEndTag guifg=#86C166
-
-" Customization
-"" highlight Visual guibg=#666633
-"" highlight Search guifg=#666600 guibg=#CCCC99
-"" highlight Comment guifg=#66CC99
+highlight Conceal guibg=NONE
 
 " ----------------------------------------------------------------
 " Tab
