@@ -16,6 +16,9 @@ source $VIMRUNTIME/macros/matchit.vim
 " Display
 set autoindent
 set number
+set incsearch
+set hlsearch
+set smartcase
 
 " Editor
 set shiftwidth=2
