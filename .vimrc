@@ -226,10 +226,10 @@ autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 " ----------------------------------------------------------------
 " encomment
 " https://github.com/tyru/caw.vim
-nmap <Space>k <Plug>(caw:i:toggle)
-vmap <Space>k <Plug>(caw:i:toggle)
-" nmap <Space><S-k> <Plug>(caw:wrap:toggle)
-" vmap <Space><S-k> <Plug>(caw:wrap:toggle)
+nmap <Space>k <Plug>(caw:hatpos:toggle)
+vmap <Space>k <Plug>(caw:hatpos:toggle)
+nmap <Space><S-k> <Plug>(caw:wrap:toggle)
+vmap <Space><S-k> <Plug>(caw:wrap:toggle)
 
 " ----------------------------------------------------------------
 " Multiple Cursors
