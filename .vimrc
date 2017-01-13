@@ -1,7 +1,7 @@
 if has('win32')
-let vimfiles_path = '~/vimfiles'
+	let vimfiles_path = '~/vimfiles'
 else
-let vimfiles_path = '~/.vim'
+	let vimfiles_path = '~/.vim'
 end
 
 " ----------------------------------------------------------------
@@ -11,10 +11,14 @@ end
 set nobackup
 set noswapfile
 set noundofile
+source $VIMRUNTIME/macros/matchit.vim
 
 " Display
 set autoindent
 set number
+set incsearch
+set hlsearch
+set smartcase
 
 " Editor
 set shiftwidth=2
@@ -222,10 +226,10 @@ autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 " ----------------------------------------------------------------
 " encomment
 " https://github.com/tyru/caw.vim
-nmap <Space>k <Plug>(caw:i:toggle)
-vmap <Space>k <Plug>(caw:i:toggle)
-" nmap <Space><S-k> <Plug>(caw:wrap:toggle)
-" vmap <Space><S-k> <Plug>(caw:wrap:toggle)
+nmap <Space>k <Plug>(caw:hatpos:toggle)
+vmap <Space>k <Plug>(caw:hatpos:toggle)
+nmap <Space><S-k> <Plug>(caw:wrap:toggle)
+vmap <Space><S-k> <Plug>(caw:wrap:toggle)
 
 " ----------------------------------------------------------------
 " Multiple Cursors
