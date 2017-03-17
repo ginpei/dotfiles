@@ -3,6 +3,7 @@
 [core]
 	editor = vi
 	attributesfile = ~/.gitattributes
+	pager = 'less -x2'
 [user]
 	name = ginpei
 	email = ginpei@gmail.com
