@@ -216,7 +216,7 @@ let g:EasyMotion_leader_key=","
 let g:EasyMotion_grouping=1
 nmap <C-k><C-k> ,b
 nmap <C-k><C-j> ,w
-nmap <C-j> <Plug>(easymotion-s2)
+nmap <C-j> <Plug>(easymotion-sn)
 
 " ----------------------------------------------------------------
 " neo-complete
