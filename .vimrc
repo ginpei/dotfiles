@@ -25,6 +25,7 @@ set shiftwidth=2
 set showtabline=2
 set softtabstop=2
 set tabstop=2
+set scrolloff=0
 set foldmethod=indent
 set foldlevelstart=999
 " let javaScript_fold=1
