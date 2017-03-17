@@ -53,7 +53,7 @@ nnoremap <C-C><C-D> :cd %:h<CR>
 nnoremap <C-L><C-C><C-D> :lcd %:h<CR>
 imap <C-@> <C-[>
 
-inoremap <C-F><C-D> <C-R>=strftime('%Y-%m-%d')<CR>
+inoremap <C-F>d <C-R>=strftime('%Y-%m-%d')<CR>
 inoremap <C-F><S-D> <C-R>=strftime('%H:%M')<CR>
 inoremap <C-F><S-F> for (var i=0, l=.length; i<l; i++) {<CR>}<Esc>-15la
 
@@ -78,6 +78,7 @@ augroup vimrc
 	autocmd!
 	autocmd BufRead * setlocal ts=2 sw=2 noet
 	autocmd FileType javascript inoremap <C-F><C-L> console.log();<Esc>hi
+	autocmd FileType javascript inoremap <C-F><C-D> console.debug();<Esc>hi
 	autocmd FileType javascript inoremap <C-F><C-F> function(
 	autocmd FileType javascript inoremap <C-F><C-G> ) {<CR>}
 	autocmd FileType javascript inoremap <C-F><C-B> .bind(this)
