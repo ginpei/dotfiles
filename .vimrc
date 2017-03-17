@@ -141,6 +141,9 @@ NeoBundle 'tpope/vim-rails'
 NeoBundle 'leafgarland/typescript-vim'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'itchyny/vim-cursorword'
+NeoBundle 'bronson/vim-trailing-whitespace'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'posva/vim-vue'
 
 call neobundle#end()
 
