@@ -41,7 +41,7 @@ set spell
 " Ignore Files
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip  " Basic
 set wildignore+=*/node_modules/*  " Node
-set wildignore+=*/vendor/*  " Laravel
+set wildignore+=*/libs/*,*/vendor/*  " Common
 
 " ----------------------------------------------------------------
 " Keyboard Shortcuts
