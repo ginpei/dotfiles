@@ -20,6 +20,11 @@ set spelllang=en,cjk
 " Colours
 colorscheme default
 
+" Foldings
+set foldmethod=indent
+set foldlevelstart=999
+" let javaScript_fold=1
+
 " ----------------------------------------------------------------
 " Shortcuts
 
