@@ -49,7 +49,8 @@ set wildignore+=*/libs/*,*/vendor/*  " Common
 nnoremap <Space><Space> <Esc>
 nnoremap <S-Right> >iB
 nnoremap <S-Left> <iB
-nnoremap <C-C><C-D> :cd %:h<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-C><C-D> :cd %:h<CR>:NERDTreeCWD<CR>
 nnoremap <C-L><C-C><C-D> :lcd %:h<CR>
 imap <C-@> <C-[>
 
@@ -144,6 +145,7 @@ NeoBundle 'itchyny/vim-cursorword'
 NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'posva/vim-vue'
+NeoBundle 'scrooloose/nerdtree'
 
 call neobundle#end()
 
