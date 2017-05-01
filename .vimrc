@@ -67,6 +67,8 @@ vnoremap <C-C> "+y
 " Folding
 nnoremap <C-Z> za
 nnoremap <S-Z> vaBzf
+nnoremap zn :set fdo-=search<CR>
+nnoremap zN :set fdo+=search<CR>
 
 " Diff
 nnoremap <Space>d :diffthis<CR>
