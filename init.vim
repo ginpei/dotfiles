@@ -20,6 +20,11 @@ set spelllang=en,cjk
 " Colours
 colorscheme default
 
+" Foldings
+set foldmethod=indent
+set foldlevelstart=999
+" let javaScript_fold=1
+
 " ----------------------------------------------------------------
 " Shortcuts
 
@@ -30,6 +35,11 @@ nnoremap <Space><Space> <Esc>
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-C><C-D> :cd %:h<CR>:NERDTreeCWD<CR>
 nnoremap <C-L><C-C><C-D> :lcd %:h<CR>
+nnoremap <C-p>p :Denite file_rec<CR>
+nnoremap <C-p>m :Denite file_mru<CR>
+nnoremap <C-p>g :DeniteCursorWord grep<CR>
+nnoremap <C-p>y :Denite neoyank<CR>
+nnoremap <C-p>b :Denite buffer<CR>
 
 " Coding
 inoremap <C-F><C-G> ) {<CR>}
@@ -73,6 +83,8 @@ if dein#load_state('/Users/ginpei/.config/nvim/dein')
   " vvv My plugins
   call dein#add('Lokaltog/vim-easymotion')  " jump
   call dein#add('Shougo/denite.nvim')
+  call dein#add('Shougo/neomru.vim')
+  call dein#add('Shougo/neoyank.vim')
   call dein#add('editorconfig/editorconfig-vim')
   call dein#add('itchyny/lightline.vim')  " bottom bar
   call dein#add('itchyny/vim-cursorword')  " underline a word
