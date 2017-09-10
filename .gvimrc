@@ -10,7 +10,7 @@ set guifontwide=MS_Gothic:h12,ヒラギノ丸ゴ\ Pro:h12  " あいうえお
 " Scheme
 "" let g:molokai_original=1
 "" colorscheme molokai  " https://github.com/tomasr/molokai
-colorscheme japanesque
+colorscheme japanesque  " https://github.com/aereal/vim-colors-japanesque
 
 " remove some japanesque's colors which I don't like
 highlight Conceal guibg=NONE
