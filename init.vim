@@ -32,7 +32,7 @@ imap <C-@> <C-[>
 nnoremap <Space><Space> <Esc>
 
 " Files
-nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <C-T> :NERDTreeToggle<CR>
 nnoremap <C-C><C-D> :cd %:h<CR>:NERDTreeCWD<CR>
 nnoremap <C-L><C-C><C-D> :lcd %:h<CR>
 nnoremap <C-p>p :Denite file_rec<CR>
@@ -56,10 +56,12 @@ nnoremap <Space><S-D> :diffoff!<CR>
 nnoremap <Space>d :diffthis<CR>
 
 " Tabs
+nnoremap <C-W><C-T> :tabnew<CR>
 nnoremap <C-Tab> :tabnext<CR>
 nnoremap <C-S-Tab> :tabprevious<CR>
 
 " Windows
+nnoremap <C-N> :!start nvim-qt<CR>
 :command! W :set columns=80 lines=25
 
 " ----------------------------------------------------------------
@@ -71,14 +73,22 @@ if &compatible
 endif
 
 " Required:
-set runtimepath+=/Users/ginpei/.config/nvim/dein/repos/github.com/Shougo/dein.vim
+set runtimepath+=C:/Users/Ginpei/.config/nvim/dein/repos/github.com/Shougo/dein.vim
 
 " Required:
-if dein#load_state('/Users/ginpei/.config/nvim/dein')
-  call dein#begin('/Users/ginpei/.config/nvim/dein')
+if dein#load_state('C:/Users/Ginpei/.config/nvim/dein')
+  call dein#begin('C:/Users/Ginpei/.config/nvim/dein')
 
+  " Let dein manage dein
   " Required:
-  call dein#add('/Users/ginpei/.config/nvim/dein/repos/github.com/Shougo/dein.vim')
+  call dein#add('C:/Users/Ginpei/.config/nvim/dein/repos/github.com/Shougo/dein.vim')
+
+  " Add or remove your plugins here:
+  call dein#add('Shougo/neosnippet.vim')
+  call dein#add('Shougo/neosnippet-snippets')
+
+  " You can specify revision/branch/tag.
+  call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
 
   " vvv My plugins
   call dein#add('Lokaltog/vim-easymotion')  " jump
@@ -106,6 +116,7 @@ endif
 filetype plugin indent on
 syntax enable
 
+" If you want to install not installed plugins on startup.
 if dein#check_install()
   call dein#install()
 endif
