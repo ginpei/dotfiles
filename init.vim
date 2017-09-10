@@ -147,7 +147,7 @@ nmap <Leader>o <Plug>(openbrowser-open)
 
 " ----------------------------------------------------------------
 " https://github.com/scrooloose/nerdtree
-let NERDTreeShowBookmarks=1
+let NERDTreeShowBookmarks=0
 
 " ----------------------------------------------------------------
 " Indent Guides
