@@ -1,3 +1,8 @@
+" # File Locations for Windows
+" - Color scheme: `$NEOVIM/share/nvim/colors`
+" - Word file (spell): `$NEOVIM/share/nvim/runtime/spell`
+" - dein.vim: seems anywhere you want
+
 " ----------------------------------------------------------------
 " Basic Settings
 
