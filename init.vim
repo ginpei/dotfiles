@@ -3,6 +3,8 @@
 " - Word file (spell): `$NEOVIM/share/nvim/runtime/spell`
 " - dein.vim: seems anywhere you want
 
+cd $HOME
+
 " ----------------------------------------------------------------
 " Basic Settings
 
