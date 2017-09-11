@@ -34,8 +34,10 @@ set foldlevelstart=999
 " ----------------------------------------------------------------
 " Shortcuts
 
+" Basics
 imap <C-@> <C-[>
 nnoremap <Space><Space> <Esc>
+vnoremap <C-C> "+y
 
 " Files
 nnoremap <C-T> :NERDTreeToggle<CR>
