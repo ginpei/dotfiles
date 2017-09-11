@@ -23,7 +23,8 @@ set spell
 set spelllang=en,cjk
 
 " Colours
-colorscheme default
+" colorscheme default
+colorscheme japanesque
 
 " Foldings
 set foldmethod=indent
