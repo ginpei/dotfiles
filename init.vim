@@ -31,7 +31,7 @@ colorscheme japanesque
 " Foldings
 set foldmethod=indent
 set foldlevelstart=999
-" let javaScript_fold=1
+set foldopen-=search
 
 " ----------------------------------------------------------------
 " Shortcuts
@@ -64,8 +64,15 @@ vnoremap <C-L> $
 nnoremap <C-/> :noh<CR>
 
 " Folding
+function! ToggleSearchFromFoldings()
+	if (index(split(&foldopen, ","), "search") < 0)
+		set foldopen+=search
+	else
+		set foldopen-=search
+	endif
+endfunction
 nnoremap <C-Z> za
-" nnoremap <S-Z> :if (index(split(&foldopen, ","), "search") < 0) \| set foldopen += "search" \| else \| set foldopen -= "search" \| endif \|<cr>
+nnoremap <S-Z> :call ToggleSearchFromFoldings()<cr>
 
 " Diff
 nnoremap <Space><C-D> :diffupdate<CR>
