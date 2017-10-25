@@ -43,7 +43,7 @@ nnoremap <Space><Space> <Esc>
 " Files
 nnoremap <C-T> :NERDTreeToggle<CR>
 nnoremap <Space><C-F> :NERDTreeFind<CR>
-nnoremap <C-C><C-D> :cd %:h<CR>:NERDTreeCWD<CR>
+" nnoremap <C-C><C-D> :cd %:h<CR>:NERDTreeCWD<CR>
 " nnoremap <C-L><C-C><C-D> :lcd %:h<CR>
 " nnoremap <C-p>p :Denite file_rec<CR>
 " nnoremap <C-p>m :Denite file_mru<CR>
