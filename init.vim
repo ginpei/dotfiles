@@ -134,6 +134,7 @@ if dein#load_state('C:/Users/ginpei/.config/dein.vim')
   call dein#add('Shougo/deoplete.nvim')  " requires Python3
   call dein#add('Shougo/neomru.vim')
   call dein#add('Shougo/neoyank.vim')
+  call dein#add('ctrlpvim/ctrlp.vim')
   call dein#add('editorconfig/editorconfig-vim')  " ?
   call dein#add('itchyny/lightline.vim')  " bottom bar
   call dein#add('itchyny/vim-cursorword')  " underline a word
@@ -144,7 +145,6 @@ if dein#load_state('C:/Users/ginpei/.config/dein.vim')
   call dein#add('tpope/vim-fugitive')
   call dein#add('tyru/caw.vim')  " toggle comment
   call dein#add('tyru/open-browser.vim')  " open URL
-  call dein#add('ctrlpvim/ctrlp.vim')
   " call dein#add('')
   " ^^^ My plugins
 
@@ -180,6 +180,14 @@ xmap <C-k> <Plug>(neosnippet_expand_target)
 "" endif
 
 let g:neosnippet#snippets_directory="$HOME/.config/neosnippet.vim"
+
+" ----------------------------------------------------------------
+" Ctrlp
+" https://github.com/kien/ctrlp.vim
+
+let g:ctrlp_custom_ignore = {
+	\ 'dir': 'node_modules\|vendor',
+	\ }
 
 " ----------------------------------------------------------------
 " deoplete.nvim
@@ -226,11 +234,3 @@ let g:indent_guides_enable_on_vim_startup = 1
 " https://github.com/editorconfig/editorconfig-vim
 
 " let g:EditorConfig_exec_path = "C:/Users/ginpei/app/editorconfig/bin/editorconfig.exe"
-
-" ----------------------------------------------------------------
-" Ctrlp
-" https://github.com/kien/ctrlp.vim
-
-let g:ctrlp_custom_ignore = {
-	\ 'dir': 'node_modules\|vendor',
-	\ }
