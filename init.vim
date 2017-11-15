@@ -1,9 +1,32 @@
+" # Requirements
+"
+" - dein.vim
+" - Following variables
+"   - `dein_home_path`
+"   - `dein_plugin_base_path`
+"
+" ```
+" let dein_home_path = '~/.config/dein.vim/repos/github.com/Shougo/dein.vim'
+" let dein_plugin_base_path = '~/.config/dein.vim'
+" source $HOME/projects/dotfiles/init.vim
+" ```
+"
 " # File Locations for Windows
-" - Color scheme: `$NEOVIM/share/nvim/colors`
-" - Word file (spell): `$NEOVIM/share/nvim/runtime/spell`
-" - dein.vim: seems anywhere you want
+"
+" - Word file (spell): `$VIM/share/nvim/runtime/spell`
+" - Color scheme: `$HOME/.vim/colors`
+" - Settings in Windows: `$HOME/AppData\Local\nvim\init.vim`
 
-cd $HOME
+" ----------------------------------------------------------------
+" Setting variables
+
+if !exists('dein_home_path')
+	dein_home = ''
+endif
+
+if !exists('dein_plugin_base_path')
+	dein_home = ''
+endif
 
 " ----------------------------------------------------------------
 " Basic Settings
@@ -111,15 +134,15 @@ if &compatible
 endif
 
 " Required:
-set runtimepath+=C:/Users/ginpei/.config/dein.vim/repos/github.com/Shougo/dein.vim
+let &runtimepath .= ',' . dein_home_path
 
 " Required:
-if dein#load_state('C:/Users/ginpei/.config/dein.vim')
-  call dein#begin('C:/Users/ginpei/.config/dein.vim')
+if dein#load_state(dein_plugin_base_path)
+  call dein#begin(dein_plugin_base_path)
 
   " Let dein manage dein
   " Required:
-  call dein#add('C:/Users/ginpei/.config/dein.vim/repos/github.com/Shougo/dein.vim')
+  call dein#add(dein_home_path)
 
   " Add or remove your plugins here:
   call dein#add('Shougo/neosnippet.vim')
