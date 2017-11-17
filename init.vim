@@ -68,11 +68,6 @@ nnoremap <Tab> :NERDTreeToggle<CR>
 nnoremap <Space><Tab> :NERDTreeFind<CR>
 " nnoremap <C-C><C-D> :cd %:h<CR>:NERDTreeCWD<CR>
 " nnoremap <C-L><C-C><C-D> :lcd %:h<CR>
-" nnoremap <C-p>p :Denite file_rec<CR>
-" nnoremap <C-p>m :Denite file_mru<CR>
-" nnoremap <C-p>g :DeniteCursorWord grep<CR>
-" nnoremap <C-p>y :Denite neoyank<CR>
-" nnoremap <C-p>b :Denite buffer<CR>
 
 " Coding
 nnoremap <S-Left> <iB
@@ -146,7 +141,6 @@ if dein#load_state(dein_plugin_base_path)
 
   " call dein#add('')
   call dein#add('Lokaltog/vim-easymotion')  " jump
-  call dein#add('Shougo/denite.nvim')
   call dein#add('Shougo/deoplete.nvim')  " requires Python3
   call dein#add('Shougo/neosnippet-snippets')
   call dein#add('Shougo/neosnippet.vim')
