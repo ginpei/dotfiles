@@ -144,14 +144,12 @@ if dein#load_state(dein_plugin_base_path)
   " Required:
   call dein#add(dein_home_path)
 
-  " Add or remove your plugins here:
-  call dein#add('Shougo/neosnippet.vim')
-  call dein#add('Shougo/neosnippet-snippets')
-
-  " vvv My plugins
+  " call dein#add('')
   call dein#add('Lokaltog/vim-easymotion')  " jump
   call dein#add('Shougo/denite.nvim')
   call dein#add('Shougo/deoplete.nvim')  " requires Python3
+  call dein#add('Shougo/neosnippet-snippets')
+  call dein#add('Shougo/neosnippet.vim')
   call dein#add('ctrlpvim/ctrlp.vim')
   call dein#add('editorconfig/editorconfig-vim')  " ?
   call dein#add('itchyny/lightline.vim')  " bottom bar
@@ -163,8 +161,6 @@ if dein#load_state(dein_plugin_base_path)
   call dein#add('tpope/vim-fugitive')
   call dein#add('tyru/caw.vim')  " toggle comment
   call dein#add('tyru/open-browser.vim')  " open URL
-  " call dein#add('')
-  " ^^^ My plugins
 
   " Required:
   call dein#end()
