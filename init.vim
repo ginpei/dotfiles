@@ -148,15 +148,10 @@ if dein#load_state(dein_plugin_base_path)
   call dein#add('Shougo/neosnippet.vim')
   call dein#add('Shougo/neosnippet-snippets')
 
-  " You can specify revision/branch/tag.
-  call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
-
   " vvv My plugins
   call dein#add('Lokaltog/vim-easymotion')  " jump
   call dein#add('Shougo/denite.nvim')
   call dein#add('Shougo/deoplete.nvim')  " requires Python3
-  call dein#add('Shougo/neomru.vim')
-  call dein#add('Shougo/neoyank.vim')
   call dein#add('ctrlpvim/ctrlp.vim')
   call dein#add('editorconfig/editorconfig-vim')  " ?
   call dein#add('itchyny/lightline.vim')  " bottom bar
