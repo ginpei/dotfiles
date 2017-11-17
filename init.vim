@@ -144,15 +144,15 @@ if dein#load_state(dein_plugin_base_path)
   call dein#add('Shougo/deoplete.nvim')  " requires Python3
   call dein#add('Shougo/neosnippet-snippets')
   call dein#add('Shougo/neosnippet.vim')
-  call dein#add('ctrlpvim/ctrlp.vim')
+  call dein#add('ctrlpvim/ctrlp.vim')  " filer
   call dein#add('editorconfig/editorconfig-vim')  " ?
   call dein#add('itchyny/lightline.vim')  " bottom bar
   call dein#add('itchyny/vim-cursorword')  " underline a word
   call dein#add('mattn/emmet-vim')
   call dein#add('nathanaelkane/vim-indent-guides')
   call dein#add('posva/vim-vue')
-  call dein#add('scrooloose/nerdtree')
-  call dein#add('tpope/vim-fugitive')
+  call dein#add('scrooloose/nerdtree')  " filer
+  call dein#add('tpope/vim-fugitive')  " git
   call dein#add('tyru/caw.vim')  " toggle comment
   call dein#add('tyru/open-browser.vim')  " open URL
 
