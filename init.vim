@@ -66,8 +66,8 @@ nnoremap <Space><Space> <Esc>
 " Files
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <Space><C-t> :NERDTreeFind<CR>
-nnoremap <M-p> :CtrlPMRUFiles<CR>
-nnoremap <M-m> :CtrlPBuffer<CR>
+nnoremap <Space><C-p> :CtrlPMRUFiles<CR>
+nnoremap <Space><C-p> :CtrlPBuffer<CR>
 
 " Coding
 nnoremap <S-Left> <iB
@@ -107,7 +107,7 @@ nnoremap <C-N> :!start nvim-qt<CR>
 " nnoremap <C-N> :!start nvim-qt --qwindowgeometry 1280x850<CR>
 :command! W :set columns=80 lines=25
 vnoremap <C-C> "+y
-nnoremap <M-v> "+p
+nnoremap <Space>p "+p
 
 " Terminal
 tnoremap <Esc> <C-\><C-n>
