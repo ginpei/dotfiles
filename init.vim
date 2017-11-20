@@ -109,6 +109,10 @@ nnoremap <C-N> :!start nvim-qt<CR>
 vnoremap <C-C> "+y
 nnoremap <M-v> "+p
 
+" Terminal
+tnoremap <Esc> <C-\><C-n>
+tnoremap <C-\><C-\> <Esc>
+
 " ----------------------------------------------------------------
 " Snippet
 
