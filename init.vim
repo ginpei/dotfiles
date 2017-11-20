@@ -68,6 +68,8 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <Space><C-t> :NERDTreeFind<CR>
 " nnoremap <C-C><C-D> :cd %:h<CR>:NERDTreeCWD<CR>
 " nnoremap <C-L><C-C><C-D> :lcd %:h<CR>
+nnoremap <M-p> :CtrlPMRUFiles<CR>
+nnoremap <M-m> :CtrlPBuffer<CR>
 
 " Coding
 nnoremap <S-Left> <iB
