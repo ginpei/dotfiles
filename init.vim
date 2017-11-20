@@ -107,6 +107,7 @@ nnoremap <C-N> :!start nvim-qt<CR>
 " nnoremap <C-N> :!start nvim-qt --qwindowgeometry 1280x850<CR>
 :command! W :set columns=80 lines=25
 vnoremap <C-C> "+y
+nnoremap <M-v> "+p
 
 " ----------------------------------------------------------------
 " Snippet
