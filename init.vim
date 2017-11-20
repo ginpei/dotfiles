@@ -102,7 +102,7 @@ nnoremap <C-W><C-T> :tabnew<CR>
 nnoremap <C-Tab> :tabnext<CR>
 nnoremap <C-S-Tab> :tabprevious<CR>
 
-" Windows
+" Dealing with the host OS
 nnoremap <C-N> :!start nvim-qt<CR>
 " nnoremap <C-N> :!start nvim-qt --qwindowgeometry 1280x850<CR>
 :command! W :set columns=80 lines=25
