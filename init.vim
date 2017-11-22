@@ -108,6 +108,7 @@ nnoremap <C-N> :!start nvim-qt<CR>
 :command! W :set columns=80 lines=25
 vnoremap <C-C> "+y
 nnoremap <Space>p "+p
+nnoremap <Space>P "+P
 
 " Terminal
 tnoremap <Esc> <C-\><C-n>
