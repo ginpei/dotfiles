@@ -67,7 +67,7 @@ nnoremap <Space><Space> <Esc>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <Space><C-t> :NERDTreeFind<CR>
 nnoremap <Space><C-p> :CtrlPMRUFiles<CR>
-nnoremap <Space><C-p> :CtrlPBuffer<CR>
+nnoremap <Space><C-b> :CtrlPBuffer<CR>
 
 " Coding
 nnoremap <S-Left> <iB
