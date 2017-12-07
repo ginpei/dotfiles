@@ -113,6 +113,7 @@ nnoremap <Space>P "+P
 " Terminal
 tnoremap <Esc> <C-\><C-n>
 tnoremap <C-\><C-\> <Esc>
+command TB :terminal bash
 
 " ----------------------------------------------------------------
 " Snippet
