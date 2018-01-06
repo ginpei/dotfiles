@@ -74,6 +74,9 @@ nnoremap <S-Left> <iB
 nnoremap <S-Right> >iB
 vnoremap <S-S> :sort<cr>
 
+" Visual
+nnoremap <Space>s :SyntasticToggleMode<CR>
+
 " Search
 set inccommand=split
 nnoremap <C-H> ^
@@ -164,6 +167,7 @@ if dein#load_state(dein_plugin_base_path)
   call dein#add('tpope/vim-fugitive')  " git
   call dein#add('tyru/caw.vim')  " toggle comment
   call dein#add('tyru/open-browser.vim')  " open URL
+  call dein#add('vim-syntastic/syntastic')
 
   " Required:
   call dein#end()
@@ -253,3 +257,21 @@ let g:indent_guides_enable_on_vim_startup = 1
 
 " Set following variable in first init.vim on current machine
 " let g:EditorConfig_exec_path = "C:/Users/ginpei/app/editorconfig/bin/editorconfig.exe"
+
+" ----------------------------------------------------------------
+" Syntastic
+" https://github.com/vim-syntastic/syntastic
+" https://medium.com/@hpux/vim-and-eslint-16fa08cc580f
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exec = 'npm run lint --'
+
+" let g:syntastic_debug=3
