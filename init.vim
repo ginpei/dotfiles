@@ -75,6 +75,7 @@ nnoremap <S-Right> >iB
 vnoremap <S-S> :sort<cr>
 
 " Search
+set inccommand=split
 nnoremap <C-H> ^
 vnoremap <C-H> ^
 nnoremap <C-L> $
