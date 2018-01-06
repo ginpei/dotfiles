@@ -247,7 +247,7 @@ let g:NERDTreeBookmarksSort=0
 let g:indent_guides_enable_on_vim_startup = 1
 
 " ----------------------------------------------------------------
-" Indent Guides
+" Editorconfig
 " https://github.com/editorconfig/editorconfig-vim
 
 " let g:EditorConfig_exec_path = "C:/Users/ginpei/app/editorconfig/bin/editorconfig.exe"
