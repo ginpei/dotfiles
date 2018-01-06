@@ -250,4 +250,5 @@ let g:indent_guides_enable_on_vim_startup = 1
 " Editorconfig
 " https://github.com/editorconfig/editorconfig-vim
 
+" Set following variable in first init.vim on current machine
 " let g:EditorConfig_exec_path = "C:/Users/ginpei/app/editorconfig/bin/editorconfig.exe"
