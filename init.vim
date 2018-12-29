@@ -100,6 +100,7 @@ nnoremap <S-Z> :call ToggleSearchFromFoldings()<cr>
 nnoremap <Space><C-D> :diffupdate<CR>
 nnoremap <Space><S-D> :diffoff!<CR>
 nnoremap <Space>d :diffthis<CR>
+" set diffopt+=vertical
 
 " Tabs
 nnoremap <C-W><C-T> :tabnew<CR>
@@ -160,6 +161,7 @@ if dein#load_state(dein_plugin_base_path)
   call dein#add('Shougo/deoplete.nvim')  " requires Python3
   call dein#add('Shougo/neosnippet-snippets')
   call dein#add('Shougo/neosnippet.vim')
+  call dein#add('airblade/vim-gitgutter')  " show changed lines
   call dein#add('ctrlpvim/ctrlp.vim')  " filer
   call dein#add('digitaltoad/vim-pug')
   call dein#add('editorconfig/editorconfig-vim')  " ?
@@ -167,6 +169,7 @@ if dein#load_state(dein_plugin_base_path)
   call dein#add('itchyny/vim-cursorword')  " underline a word
   call dein#add('mattn/emmet-vim')
   call dein#add('nathanaelkane/vim-indent-guides')
+  call dein#add('oblitum/rainbow')
   call dein#add('posva/vim-vue')
   call dein#add('scrooloose/nerdtree')  " filer
   call dein#add('tpope/vim-fugitive')  " git
