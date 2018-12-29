@@ -4,6 +4,7 @@
 	editor = vi
 	attributesfile = ~/.gitattributes
 	pager = "less -x2"
+	excludesfile = ~/.gitignore_global
 [user]
 	name = ginpei
 	email = ginpei@gmail.com
