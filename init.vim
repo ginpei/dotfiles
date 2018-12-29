@@ -115,9 +115,14 @@ nnoremap <Space>p "+p
 nnoremap <Space>P "+P
 
 " Terminal
-tnoremap <Esc> <C-\><C-n>
-tnoremap <C-\><C-\> <Esc>
+tnoremap <C-\><C-\> <C-\><C-n>
+tnoremap <S-Space> <Space>
 command TB :terminal bash
+
+tnoremap <C-Tab> <C-\><C-n>:tabnext<CR>
+tnoremap <C-S-Tab> <C-\><C-n>:tabprevious<CR>
+" tnoremap <C-W><C-T> <C-\><C-n>:tabnew<CR>
+tnoremap <C-/> <C-\><C-n>:noh<CR>a
 
 " ----------------------------------------------------------------
 " Snippet
