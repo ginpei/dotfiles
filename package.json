@@ -1,8 +1,13 @@
 {
   "private": true,
   "scripts": {
-    "start": "echo Hello world!"
+    "start": "echo Hello world!",
+    "lint": "eslint ."
   },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint": "^5.10.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
 }
