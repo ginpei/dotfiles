@@ -117,6 +117,8 @@ nnoremap <Space>P "+P
 
 " Terminal
 tnoremap <C-\><C-\> <C-\><C-n>
+tnoremap <C-\>p <C-\><C-n>pa
+tnoremap <C-\>P <C-\><C-n>"+Pa
 tnoremap <S-Space> <Space>
 command TB :terminal bash
 
