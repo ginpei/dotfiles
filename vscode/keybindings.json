@@ -1,0 +1,83 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "ctrl+m",
+        "command": "",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+alt+right",
+        "command": "cursorWordPartRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "cursorWordPartStartLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+right",
+        "command": "cursorWordPartRightSelect"
+    },
+    {
+        "key": "ctrl+shift+alt+left",
+        "command": "cursorWordPartStartLeftSelect"
+    },
+    {
+        "key": "ctrl+k ctrl+s",
+        "command": "editor.action.sortLinesAscending"
+    },
+    {
+        "key": "ctrl+k h",
+        "command": "cursorHome",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+k l",
+        "command": "cursorEnd",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+k oem_6",
+        "command": "workbench.action.editor.nextChange",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k oem_4",
+        "command": "workbench.action.editor.previousChange",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k j",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+oem_3",
+        "command": "-workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+k shift+]",
+        "command": "editor.action.marker.nextInFiles",
+        "when": "editorFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+k shift+[",
+        "command": "editor.action.marker.prevInFiles",
+        "when": "editorFocus && !editorReadonly"
+    },
+]
