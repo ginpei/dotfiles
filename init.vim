@@ -167,6 +167,7 @@ if dein#load_state(dein_plugin_base_path)
   call dein#add('ctrlpvim/ctrlp.vim')  " filer
   call dein#add('digitaltoad/vim-pug')
   call dein#add('editorconfig/editorconfig-vim')  " ?
+  call dein#add('isRuslan/vim-es6')
   call dein#add('itchyny/lightline.vim')  " bottom bar
   call dein#add('itchyny/vim-cursorword')  " underline a word
   call dein#add('mattn/emmet-vim')
