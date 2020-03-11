@@ -23,6 +23,7 @@
 	graph = log --graph --date=short --pretty=format:\"%C(yellow)%h %C(white)%s %C(green)%d %C(red)%cn %C(blue)%cd - %cr\" --all
 	daily = log --since=yesterday --author=ginpei --pretty=format:'* %s'  --all
 	zip = archive --format=zip HEAD
+	cancel-all = !git commit -a -m 'Temporary commit for cancel' && git reset --hard HEAD~
 [color]
 	branch = always
 	diff = always
