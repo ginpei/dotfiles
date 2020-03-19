@@ -19,6 +19,7 @@
 	dl = log -1 -p  --color-words
 	ap = add -p
 	cm = commit -m
+	cmx = commit --no-verify -m
 	path = log --graph --date=short --pretty=format:\"%C(yellow)%h %C(white)%s %C(green)%d %C(red)%cn %C(blue)%cd - %cr\"
 	graph = log --graph --date=short --pretty=format:\"%C(yellow)%h %C(white)%s %C(green)%d %C(red)%cn %C(blue)%cd - %cr\" --all
 	daily = log --since=yesterday --author=ginpei --pretty=format:'* %s'  --all
