@@ -4,6 +4,6 @@
 # fi
 
 # General
-alias tm="tmux attach $1 || tmux new -s $1"
+alias tm="tmux new-session -A -s $1"
 alias npms='npm start'
 
