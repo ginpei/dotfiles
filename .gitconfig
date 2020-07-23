@@ -3,10 +3,8 @@
 [core]
 	editor = vi
 	attributesfile = ~/.gitattributes
-	pager = delta --keep-plus-minus-markers
+	pager = "less -x2"
 	excludesfile = ~/.gitignore_global
-[interactive]
-	diffFilter = delta --color-only
 [user]
 	name = ginpei
 	email = ginpei@gmail.com
