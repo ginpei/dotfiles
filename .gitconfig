@@ -11,6 +11,7 @@
 [alias]
 	s = status -sb
 	c = checkout
+	w = switch
 	b = branch
 	d = diff --color-words
 	diffc = diff --cached
