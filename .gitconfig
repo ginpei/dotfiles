@@ -6,8 +6,8 @@
 	pager = "less -x2"
 	excludesfile = ~/.gitignore_global
 [user]
-	name = ginpei
-	email = ginpei@gmail.com
+	name = Ginpei
+	email = ginpei@ginpei.dev
 [alias]
 	s = status -sb
 	c = checkout
