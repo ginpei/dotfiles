@@ -1,5 +1,3 @@
-[color]
-	ui = true
 [core]
 	editor = vi
 	attributesfile = ~/.gitattributes
@@ -26,10 +24,5 @@
 	daily = log --since=yesterday --author=ginpei --pretty=format:'* %s'  --all
 	zip = archive --format=zip HEAD
 	cancel = !git commit --no-verify -a -m 'Temporary commit for cancel' && git reset --hard HEAD~
-[color]
-	branch = always
-	diff = always
-	interactive = always
-	status = always
 [push]
 	default = simple
