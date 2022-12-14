@@ -1,8 +1,8 @@
 [core]
 	editor = vi
-	attributesfile = ~/.gitattributes
+	attributesFile = ~/.gitattributes
 	pager = "less -x2"
-	excludesfile = ~/.gitignore_global
+	excludesFile = ~/.gitignore_global
 [user]
 	name = Ginpei
 	email = ginpei@ginpei.dev
