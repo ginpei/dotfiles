@@ -9,6 +9,7 @@
 [alias]
 	s = status -sb
 	c = checkout
+	cp = cherry-pick
 	w = switch
 	b = branch
 	d = diff --color-words
