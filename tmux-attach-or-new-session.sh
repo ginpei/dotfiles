@@ -7,7 +7,7 @@
 #
 # Prepare:
 # $ source path/to/tmux-attach-or-new-session.sh
-# $ alias tm=tmux-attach-or-new-session.sh
+# $ alias tm=tmux-attach-or-new-session
 #
 # Auto name:
 # $ cd path/to/project
