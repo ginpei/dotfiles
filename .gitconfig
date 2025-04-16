@@ -16,6 +16,7 @@
 	diffc = diff --cached
 	dc = diff --cached --color-words
 	diffl = log -1 -p
+	diff-merge = "!f() { git diff \"$1^1..$1\"; }; f"
 	dl = log -1 -p  --color-words
 	ap = add -p
 	cm = commit -m
