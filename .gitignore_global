@@ -1,4 +1,4 @@
 # Usage:
-# git config --global core.excludesfile `pwd`/.gitignore_global
+# git config --global core.excludesfile $(pwd)/.gitignore_global
 ,*
 
