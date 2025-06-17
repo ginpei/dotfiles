@@ -2,3 +2,7 @@
 # git config --global core.excludesfile $(pwd)/.gitignore_global
 ,*
 
+# Claude Code
+CLAUDE.md
+.claude/
+
