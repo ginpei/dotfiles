@@ -11,4 +11,4 @@ alias cmz='npx git-cz'
 alias beep="powershell.exe '[console]::beep(261.6,700)'"
 alias beep2="powershell.exe '[console]::beep(1000,700)'"
 alias npm-update-all="npx npm-check-updates -u"
-alias ccc="claude --continue"
+alias ccc="nvm exec --lts claude --continue"
