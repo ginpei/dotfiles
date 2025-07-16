@@ -13,4 +13,5 @@ alias npms='npm start'
 alias npmd='npm run dev'
 alias cmz='npx git-cz'
 alias npm-update-all="npx npm-check-updates -u"
-alias ccc="nvm exec --lts claude --continue"
+alias ai="nvm exec --lts claude"
+alias aic="nvm exec --lts claude --continue"
