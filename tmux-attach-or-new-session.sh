@@ -29,9 +29,9 @@ function tmux-attach-or-new-session() (
     local session=$1
   fi
 
-  tmux attach -t $session # > /dev/null 2>&1
-  if [ $? -ne 0 ]; then
+  if tmux list-sessions -F "#{session_name}" 2>/dev/null | grep -q "^${session}$"; then
+    tmux attach -t $session
+  else
     tmux new -s $session
   fi
 )
-
