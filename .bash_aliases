@@ -4,7 +4,6 @@
 # fi
 
 # General
-alias tm="tmux new-session -A -s $1"
 alias beep="powershell.exe '[console]::beep(261.6,700)'"
 alias beep2="powershell.exe '[console]::beep(1000,700)'"
 
