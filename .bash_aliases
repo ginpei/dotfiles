@@ -15,3 +15,4 @@ alias cmz='npx git-cz'
 alias npm-update-all="npx npm-check-updates -u"
 alias ai="nvm exec --lts claude"
 alias aic="nvm exec --lts claude --continue"
+alias claude-install="npm install -g @anthropic-ai/claude-code"
